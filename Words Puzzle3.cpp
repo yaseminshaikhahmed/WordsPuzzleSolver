@@ -54,6 +54,7 @@ bool solveWordsPuzzle(char word[COLS+1], char wordsPuzzle[][COLS+1]){
                 //std::cout << "GOT IT AT "<< x << " " << y <<std::endl;
                 flag = 1;
                 x2 = x ; y2 = y ;
+		loopsCounter++;
                 break;
             }
             y2 = 0;
@@ -227,7 +228,7 @@ if(boolean){
 	x2 = (y == COLS-1) ? ++x2 :x;
     y2 = (y == COLS-1) ? 0 : ++y2;
 }
-loopsCounter++;
+
 	}while(loopsCounter < COLS * ROWS);
     
     
